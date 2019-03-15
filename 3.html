@@ -6,6 +6,18 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+<input id='night_day' type='button' value='night' onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.color = 'white';
+    target.style.backgroundColor = 'black';
+    this.value = 'day';
+  } else {  
+    target.style.color = 'black';
+    target.style.backgroundColor = 'white';
+    this.value = 'night';
+  }
+">
 <ol>
   <li><a href="1.html">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
@@ -17,5 +29,16 @@
 
   Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and thus is an essential part of web applications. The vast majority of websites use it,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
 </p>
+<input id='night_day' type='button' value='night' onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('body').style.backgroundColor = 'black';
+    this.value = 'day';
+  } else {  
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('body').style.backgroundColor = 'white';
+    this.value = 'night';
+  }
+">
 </body>
 </html>

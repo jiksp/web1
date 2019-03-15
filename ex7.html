@@ -9,10 +9,19 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>JavaScript</h1>
+    <h1>Loop & Array</h1>
     <script>
-        document.write(1+1);
-        
+    var coworkers = ['kyungsup', 'joondong', 'hyunseung', 'hoonjung'];
     </script>
+    <h2>Co workers</h2>
+    <ul>
+    <script>
+        var i = 0;
+        while (i < coworkers.length){
+        document.write('<li><a href="http://a.com'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+        i = i+1;
+    };
+    </script>
+    </ul>
 </body>
 </html>
