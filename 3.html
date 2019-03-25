@@ -12,10 +12,27 @@
     target.style.color = 'white';
     target.style.backgroundColor = 'black';
     this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+	  console.log(alist[i]);
+	  alist[i].style.color = 'powderblue';
+	  i = i + 1;
+      };
   } else {  
     target.style.color = 'black';
     target.style.backgroundColor = 'white';
     this.value = 'night';
+
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+	  console.log(alist[i]);
+	  alist[i].style.color = 'blue';
+	  i = i + 1;
+      };
   }
 ">
 <ol>
